@@ -1,0 +1,45 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000512 !important;
+    .list-recipe-background-img{
+        background-image: url("../../images/admin-login-bg.jpg");
+        height: 100vh;
+        width: 100%;
+        filter: blur(20px);
+        -webkit-filter: blur(20px);
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: contain;
+    }
+    .list-container{
+        width: 1300px;
+        height: 740px;
+        background-color: rgb(240, 240, 240);
+        border: 4px solid #FFAD50 ;
+        border-radius: 5px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        position: fixed;
+        overflow-y: scroll;
+        th {
+            position: sticky;
+            top: 0;
+            a{
+                background-color: #FFAD50 !important;
+                width: 75px;
+            }
+          }
+        button {
+            width: 75px;
+            margin: 0.2rem;
+        }
+    }
+}

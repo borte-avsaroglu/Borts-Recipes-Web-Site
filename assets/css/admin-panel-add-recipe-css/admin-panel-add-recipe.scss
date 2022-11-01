@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr{
+    border: #FFAD50 1px solid;
+    height: 94%;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000512 !important;
+    .add-recipe-background-img{
+        background-image: url("../../images/admin-login-bg.jpg");
+        height: 100vh;
+        width: 100%;
+        filter: blur(20px);
+        -webkit-filter: blur(20px);
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: contain;
+    }
+    .container{
+        width: 1000px;
+        height: 740px;
+        background-color: rgb(240, 240, 240);
+        border: 4px solid #FFAD50 ;
+        border-radius: 30px;
+        padding: 0.5rem;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        form{
+            width: 100%;
+            height: 100%;
+            border: 2px solid #FFAD50 ;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            a{
+                margin-top: 0.5rem;
+                width: 200px;
+                padding: 0.3rem;
+                border: 2px solid #FFAD50;
+                border-radius: 10px;
+                cursor: pointer;
+                background-color: #FFAD50;
+                color: white;
+                font-size: 15px;
+                text-decoration: none;
+                text-align: center;
+                &:hover{
+                    background-color: #F0F0F0;
+                    color: black;
+                    transition: 0.6s;
+                }
+            }
+            .form-elements{
+                width: 100%;
+                padding: 1rem 0 1rem 1rem;
+                text-align: center;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                label{
+                    font-weight: 600;
+                }
+                .item{
+                    margin-bottom: 0.7rem;
+                    input{
+                        width: 50%;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    textarea{
+                        padding: 0.3rem;
+                        border: 1px solid #FFAD50;
+                        &:focus{
+                            outline: none;
+                        }
+                    }   
+                    select{
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+                .left-content{
+                    width: 45%;
+                    .title{
+                        margin-top: 0.5rem;
+                    }
+                    #title{
+                        border: 1px solid #FFAD50;
+                    }
+                    #class{
+                        border: 1px solid #FFAD50;
+                    }
+                }
+                .right-content{
+                    width: 45%;
+                    #calories{
+                        border: 1px solid #FFAD50;
+                    }
+                    #image{
+                        width: 250px;
+                    }
+                    #gallery{
+                        width: 270px;
+                    }
+                    #rating{
+                        border: 1px solid #FFAD50;
+                    }
+                    #difficulty{
+                        border: 1px solid #FFAD50;
+                    }
+                    #duration{
+                        border: 1px solid #FFAD50;
+                    }
+                    .gallery{
+                        margin: 1rem 0;
+                    }
+                    .rating{
+                        margin: 2.5rem 0 2rem 0;
+                    }
+                    .desc{
+                        margin: 1rem 0 1.5rem 0;
+
+                        p{
+                            text-align: left;
+                        }
+                        .note-editor{
+                            border: 1px solid #FFAD50;
+                        }
+                        .note-editable{
+                            background-color: white;
+                        }
+                        .note-resizebar{
+                            background-color: #FFAD50;
+                        }
+                    }
+                }
+            }
+            .buttons{
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+                button{
+                    width: 200px;
+                    padding: 0.3rem;
+                    margin-top: -0.5rem;
+                    border: 2px solid #FFAD50;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    background-color: #FFAD50;
+                    color: white;
+                    font-size: 15px;
+                    &:focus{
+                        outline: none;
+                    }
+                    &:hover{
+                        background-color: #F0F0F0;
+                        color: black;
+                        transition: 0.6s;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+  border: #FFAD50 1px solid;
+  height: 94%;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000512 !important;
+}
+
+body .add-recipe-background-img {
+  background-image: url("../../images/admin-login-bg.jpg");
+  height: 100vh;
+  width: 100%;
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .container {
+  width: 1000px;
+  height: 740px;
+  background-color: #f0f0f0;
+  border: 4px solid #FFAD50;
+  border-radius: 30px;
+  padding: 0.5rem;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+}
+
+body .container form {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #FFAD50;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+body .container form a {
+  margin-top: 0.5rem;
+  width: 200px;
+  padding: 0.3rem;
+  border: 2px solid #FFAD50;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #FFAD50;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+}
+
+body .container form a:hover {
+  background-color: #F0F0F0;
+  color: black;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+body .container form .form-elements {
+  width: 100%;
+  padding: 1rem 0 1rem 1rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container form .form-elements label {
+  font-weight: 600;
+}
+
+body .container form .form-elements .item {
+  margin-bottom: 0.7rem;
+}
+
+body .container form .form-elements .item input {
+  width: 50%;
+}
+
+body .container form .form-elements .item input:focus {
+  outline: none;
+}
+
+body .container form .form-elements .item textarea {
+  padding: 0.3rem;
+  border: 1px solid #FFAD50;
+}
+
+body .container form .form-elements .item textarea:focus {
+  outline: none;
+}
+
+body .container form .form-elements .item select:focus {
+  outline: none;
+}
+
+body .container form .form-elements .left-content {
+  width: 45%;
+}
+
+body .container form .form-elements .left-content .title {
+  margin-top: 0.5rem;
+}
+
+body .container form .form-elements .left-content #title {
+  border: 1px solid #FFAD50;
+}
+
+body .container form .form-elements .left-content #class {
+  border: 1px solid #FFAD50;
+}
+
+body .container form .form-elements .right-content {
+  width: 45%;
+}
+
+body .container form .form-elements .right-content #calories {
+  border: 1px solid #FFAD50;
+}
+
+body .container form .form-elements .right-content #image {
+  width: 250px;
+}
+
+body .container form .form-elements .right-content #gallery {
+  width: 270px;
+}
+
+body .container form .form-elements .right-content #rating {
+  border: 1px solid #FFAD50;
+}
+
+body .container form .form-elements .right-content #difficulty {
+  border: 1px solid #FFAD50;
+}
+
+body .container form .form-elements .right-content #duration {
+  border: 1px solid #FFAD50;
+}
+
+body .container form .form-elements .right-content .gallery {
+  margin: 1rem 0;
+}
+
+body .container form .form-elements .right-content .rating {
+  margin: 2.5rem 0 2rem 0;
+}
+
+body .container form .form-elements .right-content .desc {
+  margin: 1rem 0 1.5rem 0;
+}
+
+body .container form .form-elements .right-content .desc p {
+  text-align: left;
+}
+
+body .container form .form-elements .right-content .desc .note-editor {
+  border: 1px solid #FFAD50;
+}
+
+body .container form .form-elements .right-content .desc .note-editable {
+  background-color: white;
+}
+
+body .container form .form-elements .right-content .desc .note-resizebar {
+  background-color: #FFAD50;
+}
+
+body .container form .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+body .container form .buttons button {
+  width: 200px;
+  padding: 0.3rem;
+  margin-top: -0.5rem;
+  border: 2px solid #FFAD50;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #FFAD50;
+  color: white;
+  font-size: 15px;
+}
+
+body .container form .buttons button:focus {
+  outline: none;
+}
+
+body .container form .buttons button:hover {
+  background-color: #F0F0F0;
+  color: black;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+/*# sourceMappingURL=admin-panel-add-recipe.css.map */

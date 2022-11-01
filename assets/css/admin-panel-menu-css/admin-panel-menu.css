@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+  border: #FFAD50 1px solid;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000512 !important;
+}
+
+body .menu-background-img {
+  background-image: url("../../images/admin-login-bg.jpg");
+  height: 100vh;
+  width: 100%;
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .container {
+  background-color: #f0f0f0;
+  width: 600px;
+  height: 370px;
+  border: 4px solid #FFAD50;
+  border-radius: 30px;
+  padding: 0.5rem;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+}
+
+body .container .elements {
+  border: 2px solid #FFAD50;
+  border-radius: 30px;
+  padding: 0.5rem;
+  height: 346px;
+}
+
+body .container .elements .headers-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.7rem;
+}
+
+body .container .elements .headers-part .php-title {
+  padding: 0.5rem;
+  text-align: right;
+  width: 50%;
+  font-size: 29px;
+  margin-right: 0.5rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+body .container .elements .headers-part .php-title span {
+  font-style: italic;
+  color: #FFAD50;
+  font-size: 30px;
+}
+
+body .container .elements .headers-part .header {
+  width: 50%;
+  padding: 0.5rem;
+  font-size: 29px;
+  text-align: left;
+  margin-left: 0.5rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+body .container .elements .links {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .elements .links a {
+  text-decoration: none;
+  color: black;
+}
+
+body .container .elements .links a p {
+  margin: 1rem;
+  font-size: 28px;
+}
+
+body .container .elements .links a p:hover {
+  color: #FFAD50;
+  font-size: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .container .elements .links form button {
+  padding: 0.5rem;
+  margin: 1rem;
+  border: 2px solid #FFAD50;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #FFAD50;
+  color: white;
+  font-size: 18px;
+}
+
+body .container .elements .links form button:hover {
+  background-color: #F0F0F0;
+  color: black;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+/*# sourceMappingURL=admin-panel-menu.css.map */
